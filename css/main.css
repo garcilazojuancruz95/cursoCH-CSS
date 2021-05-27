@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* ====================== NAVBAR =======================*/
+
+nav {
+
+    background: linear-gradient(#d37777, #9198e5);
+}
+
+
+.nav-link:hover {
+    background: linear-gradient(#7c84dd, #9198e5);
+    transition: all 500ms;
+}
+
+#menu  div{
+    margin: auto;
+    background: linear-gradient(#d37777, #9198e5);;
+}
+
+div > #navbarSupportedContent > ul {
+    text-align: center;
+}
+
+#menu div a {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+/* ====================== BODY =======================*/
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(#9198e5, #ffff);
+}
+
+#menu li > a {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+#menu form  > button {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* ====================== SLIDER EDE IMAGENES =======================*/
+
+.carousel-inner {
+    margin-left: 12%;
+    max-height: auto;
+    max-width: auto;
+    display: block;
+}
+
+.carousel-item > div p {
+    margin-right: 25%;
+}
+
+.carousel-item > div h5 {
+    margin-right: 25%;
+}
+
+/* ====================== GALERÍA =======================*/
+
+h1 {
+    padding: 25px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#proce {
+    width: 90%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 45px;
+    padding-top: 15px;
+    align-content: flex-start;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    grid-gap: 25px;
+}
+
+.col:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .095);
+    background-color: #ffffff;
+    transition: all 300ms;
+
+}
+
+.col {
+    text-align: center;
+
+}
+
+.item-text h3 {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.item-text p {
+    font-size: 20px;
+}
+
+/* ====================== FORMULARIO =======================*/
+
+form {
+    padding-left: 25px;
+}
+
+.form-control {
+    width: 350px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    margin-bottom: 15px;
+}
+
+.btn {
+    margin-bottom: 15px;
+}
+
+/* ====================== EQUIPOS ARMADOS =======================*/
+
+#intro p {
+    font-style: italic;
+}
+
+
+.container-fluid {
+    background: linear-gradient(#a2a8e9, #e1e3f8);
+}
+
+.container-fluid h1 {
+    padding-top: 25px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.icono-wrap:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .095);
+    background: #ffffff;
+    transition: all 300ms;
+}
+
+.row p{
+    font-style: italic;
+}
+
+/* ====================== FOOTER =======================*/
+
+footer {
+    width: 100%;
+    background: linear-gradient(#000000, #5a5252);
+    color: white;
+}
+
+.container-footer-all {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*COLUMNA 1*/
+
+.column1{
+    max-width: 400px;
+}
+
+.column1 h1 {
+    font-size: 22px;
+}
+
+.column1 p {
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+}
+
+/*COLUMNA 2*/
+
+.column2 {
+    max-width: 400px;
+}
+
+.column2 h1 {
+    font-size: 22px;
+}
+
+.row {
+    margin-top: 20px;
+    display: flex;
+}
+
+.row > img {
+    width: 62px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.row label {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+}
+
+/*COLUMNA 3*/
+
+.column3 {
+    max-width: 400px;
+}
+
+.column3 h1 {
+    font-size: 22px;
+}
+
+.row2 {
+    margin-top: 20px;
+}
+
+.row2 > img {
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label {
+    margin-top: 10px;
+    margin-left: 20 px;
+    max-width: 140px;
+}
+
+.container-footer {
+    max-width: 100%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.information a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ====================== MEDIA QUERIES PANTALLA ANCHA=======================*/
+
+@media screen and (max-width: 1100px) {
+    .container-body{
+        flex-wrap: wrap;
+    }
+
+    .column1 {
+        max-width: 100%;
+    }
+
+    .column2,
+    .column3 {
+        margin-top: 40px;
+    }
+}
+
+
+/* ====================== MEDIA QUERIES PANTALLA SM =======================*/
+
+@media (max-width:768px) {
+    #intro, #equipo {
+        width: 90% !important;
+    }
+
+    #equipo p {
+        display: none;
+    }
+
+    .servicio-fila {
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+
+/* ====================== MEDIA QUERIES PANTALLA EXTRA-SM =======================*/
+
+@media (max-width: 576px) {
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}

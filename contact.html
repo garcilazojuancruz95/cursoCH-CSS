@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./img/logo/logo-pestaña.png">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Optimus Tech - Contacto</title>
+
+  </head>
+
+
+  <body>
+
+    <!-- ============================================== -->
+    <!-- ENCABEZADO -->
+    <!-- ============================================== -->
+    <header>
+ 
+
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./img/logo/logo-optimus.png" alt="logo-optimus" id="logo" height="87" width="160"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="cpu.html">Procesadores</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="motherb.html">Placas madres</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="gpu.html">Placas de video</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contacto</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="producto" placeholder="Ingresar producto" aria-label="producto">
+              <button class="btn btn-primary btn-primary-outline-success" type="button">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ============================================== -->
+    <!-- FORMULARIO -->
+    <!-- ============================================== -->
+    
+    <h1>Contáctenos</h1>
+
+    <form method="POST" action="enviar">
+
+
+
+      <h3>Cuanquier consulta, envíenos un mail.</h3>
+
+      <label>Nombre completo</label>
+      <input type="text" name="nombre" class="form-control" required>
+
+      <label>Edad</label>
+      <input type="number" name="edad" class="form-control" required>
+
+      <label>Elige el motivo</label>
+
+      <select name="motivo" class="form-control" required>
+        <option value="envio">Consultar envío</option>
+        <option value="garantia">Garantía</option>
+        <option value="devolucion">Devoluciones</option>
+        <option value="otros">Otros (detallar en comentarios)</option>
+      </select>
+
+      <label>Ingrese un comentario</label>
+
+      <br>
+
+      <textarea name="comentarios" cols="45 "></textarea>
+
+      <br>
+
+      <button type="submit" class="btn btn-warning">Enviar</button>
+
+    </form>
+
+    <!-- ============================================== -->
+    <!-- FOOTER -->
+    <!-- ============================================== -->
+
+    <footer>
+
+        <div class="container-footer-all">
+  
+            <div class="container-body">
+                
+              <div class="column1">
+                <h1>Más información de la compañía</h1>
+                <p>
+                  Somos una compañía que se encarga de ofrecer los mejores y más actualizados componentes para computadoras. También vendemos equipos armados y software con sus respectivas licencias.
+                </p>
+              </div>
+              
+              <div class="column2">
+
+                <h1>Redes socilaes</h1>
+
+                <div class="row">
+                    <img src="./img/icon/facebook.png">
+                    <label>Síguenos en Facebook</label>
+                </div>
+
+                <div class="row">
+                    <img src="./img/icon/instagram.png">
+                    <label>Síguenos en Instagram</label>
+                </div>
+
+              </div>
+
+              <div class="column3">
+
+                <h1>Información Contactos</h1>
+
+                <div class="row2">
+
+                  <img src="./img/icon/telephone.png">
+                  <label>0810-123-4567</label>
+
+                </div>
+
+                <div class="row2">
+
+                  <img src="./img/icon/wpp.png">
+                  <label>+54 11 1111-1111</label>
+
+                </div>
+
+                <div class="row2">
+
+                  <img src="./img/icon/mail.png">
+                  <label>consultas@optimus.com.ar</label>
+
+                </div>
+  
+              </div>
+  
+            </div>
+  
+        </div>
+        <div class="container-footer">
+  
+            <div class="footer">          
+  
+                <div class="information">
+                    <a href="">Información Compañía | </a>
+                    <a href="">Privación y Política | </a>
+                    <a href="">Terminos y Condiciones</a>
+                </div>
+                
+            </div>
+  
+        </div>
+  
+    </footer>
+  
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  
+    </body>
+  </html>
